@@ -53,7 +53,7 @@ Route::get('/adminlogout',[adminregistercontroller::class,'adminlogout']);
 
 
 
-
+Route::get('/adminlogin',[adminregistercontroller::class,'createlogin']);
 
 
 
@@ -94,7 +94,7 @@ Route::get('/bookingview',[bookingcontroller::class,'index']);
     route::post('/ordereditprocess/{id}',[bookingcontroller::class,'updateorder']);
 
 route::get('/order/{id}/edit', [bookingcontroller::class,'orderedit']);
-    Route::get('/adminlogin',[adminregistercontroller::class,'createlogin']);
+ 
   
     Route::get('/adminhome',[adminregistercontroller::class,'adminhome']);
     route::get('/categoryeditview/{id}', [categorycontroller::class,'edit']);
