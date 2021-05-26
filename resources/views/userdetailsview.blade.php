@@ -113,15 +113,7 @@ button .fa{
     margin: 10px 0;
 }
 </style>
-<style>
-section{
-background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(https://wallpapercave.com/wp/wp2893972.jpg);
-height:100vh;
--webkit-background-size:cover;
-background-size: cover;
-background-position:center center;
-}
-</style>
+
 
 
 
