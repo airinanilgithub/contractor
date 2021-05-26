@@ -29,7 +29,7 @@
 <center><<h1> <p class="text-white "> ADMIN SIGN UP!</p><h1></center>
 </div>
 <div class="col col-12 col-sm-6 col-md-4 col-lg-4" style="background-image:url('')">
-<form action="/adminlogin" method="post">
+<form action="/adminregisterread" method="post">
 {{csrf_field()}}<table class="table table-borderless">
 <tr>
 <br>
