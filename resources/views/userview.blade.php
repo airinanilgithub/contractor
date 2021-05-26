@@ -105,7 +105,7 @@ button:hover{
 <div class="card">
 
 <div class="image">
-<img  src="{{ URL ::asset('assets/project_img/'.$project->pimage) }}">
+<img height="250px" src="{{ URL ::asset('assets/project_img/'.$project->pimage) }}">
 </div>
 <div class="title">
  <h1>
