@@ -157,7 +157,7 @@ input[type=checkbox] {
 <br>
         <br>
         <a href="/register">Create an Account</a><br><a href="/index">User Login</a>
-
+		<a href="/adminregister">Create an admin</a>
         </center>
    
 	</div>

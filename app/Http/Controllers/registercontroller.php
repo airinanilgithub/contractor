@@ -90,7 +90,7 @@ return redirect('/index');
     }
     public function homeuser(){
         $registers=registermodel::all();
-        $data=['LoggedUserinfo'=>registermodel::where('id','=',session('loggeduser'))->first()];
+        $data=['LoggedUserinfo'=>registermodel::where('rusername','=',session('loggeduser'))->first()];
         return view('userhome',compact('registers'),$data);
 
     }
