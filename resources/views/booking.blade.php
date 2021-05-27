@@ -163,40 +163,29 @@
                         <form action="/bookings" method="post">
 {{csrf_field()}}
 							<div class="row">
-								<div class="col-sm-6">
-									<div class="form-group">
-										<span class="form-label">Name</span>
-										<input class="form-control"  name="bname"type="text" placeholder="Enter your name">
-										<span class="text-danger">@error('bphone'){{$message}} @enderror  </span>
-									</div>
-								</div>
-								<div class="col-sm-6">
-									<div class="form-group">
-										<span class="form-label">Email</span>
-										<input class="form-control" type="email" name="bmailid" placeholder="Enter your email">
-										<span class="text-danger">@error('bemail'){{$message}} @enderror  </span>
-									</div>
-								</div>
+								
+								
 							</div>
-							<div class="form-group">
-								<span class="form-label">Phone</span>
-								<input class="form-control" type="tel" name="bphone" placeholder="Enter your phone number">
-								<span class="text-danger">@error('bphone'){{$message}} @enderror  </span>
-							</div>
-							<div class="form-group">
-								<span class="form-label">Whatsapp Number</span>
-								<input class="form-control" type="tel" name="bwno" placeholder="Enter your Whatsapp number">
-								<span class="text-danger">@error('bwno'){{$message}} @enderror  </span>
-							</div>
+						
 							
 							<div class="row">
-								<div class="col-sm-5">
+
+							<div class="col-sm-5">
 									<div class="form-group">
-										<span class="form-label"> Date</span>
-										<input class="form-control" name="bdate"type="date" required>
-										<span class="text-danger">@error('bdate'){{$message}} @enderror  </span>
+										<span class="form-label">Booking Date</span>
+										<input class="form-control" name="bbookingdate"type="date" required>
+										<span class="text-danger">@error('bbookingdate'){{$message}} @enderror  </span>
 									</div>
 								</div>
+
+								<div class="col-sm-5">
+									<div class="form-group">
+										<span class="form-label">Appointment Date</span>
+										<input class="form-control" name="bappointmentdate"type="date" required>
+										<span class="text-danger">@error('bappointmentdate'){{$message}} @enderror  </span>
+									</div>
+								</div>
+								
 								<div class="col-sm-7">
 									<div class="row">
 										<div class="col-sm-4">

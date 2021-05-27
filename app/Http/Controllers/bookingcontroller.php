@@ -92,37 +92,27 @@ public function invoice()
         public function projectbooking(Request $request)
     {
         $this->validate($request,[
-            'bname' => 'required',
-            'bphone' => 'required|digits:10|unique:App\Models\bookingmodel,bphone',
             
-            'bmailid' => 'required',
-            'bwno' => 'required',
-            'bdate' => 'required'
+            'user_id' => 'required',
+            'bbookingdate' => 'required',
+            'bappointmentdate' => 'required',
+            'time' => 'required'
             
         ]);
 
-
-
-
-        $getbname=request('bname');
-        $getbphone=request('bphone');
-        $getbwno=request('bwno');
-        $getbdate=request('bdate');
-       
-        $getbmailid=request('bmailid');
+        $getbbookingdate=request('bbookingdate');      
+        $getbappointmentdate=request('bappointmentdate');
         $gettime=request('time');
-        if($request->session()->has('loggeduser')){
-            
-            $cart= new bookingmodel;
-            $cart->user_id=$request->session()->get('loggeduser');
-            $cart->bname=$getbname;
-            $cart->bphone=$getbphone;
-            $cart->bwno=$getbwno;
-            $cart->bdate=$getbdate;
-            $cart->bmailid=$getbmailid;
-            $cart->time=$gettime;
-            $cart->status="pending";
-           $cart->save();
+        if($request->session()->has('loggeduser'))
+        {      
+            $booking= new bookingmodel;
+            $booking->user_id=$request->session()->get('loggeduser');
+            $booking->bbookingdate=$getbbookingdate;
+           
+            $booking->bappointmentdate=$getbappointmentdate;
+            $booking->time=$gettime;
+            $booking->status="pending";
+            $booking->save();
          return redirect('/myorders');
         }
         else
