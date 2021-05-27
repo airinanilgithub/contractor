@@ -82,7 +82,10 @@ button:hover{
 <div class="container">
 <div class="row">
 
-<div class="colcol col-12 col-sm-12 col-md-12 col-lg-12" >
+
+
+<div class="col col-12 col-sm-3 col-md-3 col-lg-3">
+
 <br>
 
 <form class="d-flex" method="post" action="/cussearch">
