@@ -44,7 +44,8 @@
 	margin: 0 auto;
 }
 </style>
-
+<div class="container">
+<div class="row">
 <div class="banner-area">
 			<h2>ABOUT US</h2>
 		</div>
@@ -136,6 +137,8 @@
 
 </section>
 </p>
+</div>
+</div>
 			</div>
 		</div>
 @endsection
