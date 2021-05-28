@@ -5,6 +5,7 @@ use App\Models\contactmodel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
 use Validator;
 class contactcontroller extends Controller
 {
@@ -26,27 +27,17 @@ class contactcontroller extends Controller
     public function contact(Request $request)
     {
         $this->validate($request,[
-            'coname' => 'required',
-            
-            
-            'coemail' => 'required',
+         
            
             'Message' => 'required'
         ]);
-
-
-
-        $getconame=request('coname');
-       
-        $getcoemail=request('coemail');
+        $getdate= Carbon::now()->toDateTimeString();
         $getMessage=request('Message');
         if($request->session()->has('loggeduser')){
             
             $contact= new contactmodel;
             $contact->user=$request->session()->get('loggeduser');
-            $contact->coname=$getconame;
-           
-            $contact->coemail=$getcoemail;
+            $contact->date=$getdate;
             $contact->Message=$getMessage;
            $contact->save();
           return redirect('/contact');

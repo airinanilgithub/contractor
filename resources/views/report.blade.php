@@ -146,16 +146,17 @@
                 <thead>
                     <tr>
                         <th>User Name</th>
-                        <th class="w-20">Phone</th>
-                        <th class="w-20">Date</th>
-                        <th class="w-20">Time</th>
+                        <th class="w-20">Booking Date</th>
+                        <th class="w-20">Appointment Date</th>
+                        <th class="w-20">Appointment Time</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>{{$booking->user_id}}</td>
-                        <td>{{$booking->bphone}}</td>
-                        <td>{{$booking->bdate}}</td>
+                       
+                        <td>{{$booking->bookingdate}}</td>
+                        <td>{{$booking->appointmentdate}}</td>
                         <td>{{$booking->time}}</td>
                     </tr>
                     

@@ -7,6 +7,7 @@ use App\Http\Controllers\categorycontroller;
 use App\Http\Controllers\projectcontroller;
 use App\Http\Controllers\bookingcontroller;
 use App\Http\Controllers\contactcontroller;
+use Carbon\Carbon;
 /*
 |--------------------------------------------------------------------------
 | Web Routes

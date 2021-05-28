@@ -16,10 +16,15 @@ class CreateBookingmodelsTable extends Migration
         Schema::create('bookingmodels', function (Blueprint $table) {
             $table->id();
            $table->String("user_id");
-            $table->String("bbookingdate");
-            $table->String("bappointmentdate");
+          
+           $table->String("bookingdate");
+            $table->String("appointmentdate");
+         
+          
             $table->String("time");
             $table->String("status");
+            
+    
             $table->timestamps();
         });
     }

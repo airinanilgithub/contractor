@@ -68,22 +68,17 @@ body{
 {{csrf_field()}}
                 <h3>Drop Us a Message</h3>
                <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                        
-                        <br>
-
+                    
                         <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Name" name="coname">
-                        <span class="text-danger">@error('coname'){{$message}} @enderror  </span>
-                        
-                            
+                        <div class="form-group">
+                            <textarea name="Message" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                            <span class="text-danger">@error('Message'){{$message}} @enderror  </span>
                         </div>
-                        <br>
-                        <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Email-id" name="coemail">
-                        <span class="text-danger">@error('coemail'){{$message}} @enderror  </span>
                         
                         </div>
+                        <br>
                         <br>
                         <div class="form-group">
                         <button class="btnContact">Send Message</button>
@@ -91,10 +86,7 @@ body{
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="form-group">
-                            <textarea name="Message" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
-                            <span class="text-danger">@error('Message'){{$message}} @enderror  </span>
-                        </div>
+                        
                     </div>
                 </div>
             </form>

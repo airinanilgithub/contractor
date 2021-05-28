@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\bookingmodel;
 use App\Models\registermodel;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\DB;
 use Session;
@@ -92,24 +93,27 @@ public function invoice()
         public function projectbooking(Request $request)
     {
         $this->validate($request,[
-            
-            'user_id' => 'required',
-            'bbookingdate' => 'required',
-            'bappointmentdate' => 'required',
-            'time' => 'required'
+           
+           
+            'appointmentdate' => 'required'
             
         ]);
 
-        $getbbookingdate=request('bbookingdate');      
-        $getbappointmentdate=request('bappointmentdate');
+
+
+
+       
+        $getbookingdate= Carbon::now()->toDateTimeString();
+        $getappointmentdate=request('appointmentdate');
+
         $gettime=request('time');
-        if($request->session()->has('loggeduser'))
-        {      
+        if($request->session()->has('loggeduser')){
+            
             $booking= new bookingmodel;
             $booking->user_id=$request->session()->get('loggeduser');
-            $booking->bbookingdate=$getbbookingdate;
-           
-            $booking->bappointmentdate=$getbappointmentdate;
+            $booking->bookingdate=$getbookingdate;
+            $booking->appointmentdate=$getappointmentdate;
+          
             $booking->time=$gettime;
             $booking->status="pending";
             $booking->save();

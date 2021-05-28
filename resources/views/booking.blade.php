@@ -164,28 +164,18 @@
 {{csrf_field()}}
 							<div class="row">
 								
-								
 							</div>
-						
+							
+							
 							
 							<div class="row">
-
-							<div class="col-sm-5">
-									<div class="form-group">
-										<span class="form-label">Booking Date</span>
-										<input class="form-control" name="bbookingdate"type="date" required>
-										<span class="text-danger">@error('bbookingdate'){{$message}} @enderror  </span>
-									</div>
-								</div>
-
 								<div class="col-sm-5">
 									<div class="form-group">
-										<span class="form-label">Appointment Date</span>
-										<input class="form-control" name="bappointmentdate"type="date" required>
-										<span class="text-danger">@error('bappointmentdate'){{$message}} @enderror  </span>
+										<span class="form-label"> Date</span>
+										<input class="form-control" name="appointmentdate"type="date" required>
+										<span class="text-danger">@error('appointmentdate'){{$message}} @enderror  </span>
 									</div>
 								</div>
-								
 								<div class="col-sm-7">
 									<div class="row">
 										<div class="col-sm-4">

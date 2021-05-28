@@ -22,27 +22,17 @@
 </tr>
 
 
-<tr>
-    <td>Mailid</td>
-    <td>{{$booking->bmailid}}</td>
-</tr>
 
 
 <tr>
-    <td>Phone Number</td>
-    <td>{{$booking->bphone}}</td>
-</tr>
-
-
-<tr>
-    <td>Whatsapp Number</td>
-    <td>{{$booking->bwno}}</td>
+    <td> Booking Date</td>
+    <td>{{$booking->bookingdate}}</td>
 </tr>
 
 
 <tr>
     <td> Appointment Date</td>
-    <td>{{$booking->bdate}}</td>
+    <td>{{$booking->appointmentdate}}</td>
 </tr>
 <tr>
     <td>Time</td>
