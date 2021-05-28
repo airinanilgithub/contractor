@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\contactmodel;
 use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
@@ -40,7 +41,8 @@ class contactcontroller extends Controller
             $contact->date=$getdate;
             $contact->Message=$getMessage;
            $contact->save();
-          return redirect('/contact');
+           return redirect('/contact')->with('success','Message send Successfully');
+         
         }
         else
         {

@@ -1,6 +1,10 @@
 @extends("admintheme")
 @section("content")
-<table class="table ">
+<br>
+<br>
+<div class="container">
+<div class="row">
+<table class="table table-borderless  table-dark ">
 <tr>
     <th>User name</th>
 
@@ -12,7 +16,7 @@
    
 </tr>
 @foreach($bookings as $booking)
-<tr>
+<tr class="table-primary">
     <td>{{ $booking->user_id}}</td>
   
     <td>{{ $booking->bookingdate }}</td>
@@ -28,5 +32,6 @@
 @endforeach
 
 </table>
-
+</div>
+</div>
 @endsection

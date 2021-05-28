@@ -78,13 +78,13 @@ button:hover{
 <br>
 <br>
 <br>
-<section style="background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80);">
+<section style="background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80); height:1000px; 	background-size: cover;">
 <div class="container">
 <div class="row">
 
 
 
-<div class="col col-12 col-sm-3 col-md-3 col-lg-3">
+<div class="col col-12 col-sm-12 col-md-12 col-lg-12">
 
 <br>
 

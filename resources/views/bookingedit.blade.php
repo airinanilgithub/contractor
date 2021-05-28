@@ -9,13 +9,15 @@
 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
 
 <form action="/ordereditprocess/{{$booking->id}}" method="post" >
-{{csrf_field()}}<table class="table table-borderless  table-secondary">
+{{csrf_field()}}
+
+<table class="table table-borderless  table-secondary">
 <br><br><br>
 <tr>
     <td></td><td></td>
 </tr>
 
-<tr>
+<tr class="table-primary">
     <td>Username</td>
     <td>{{$booking->user_id}}</td>
 
@@ -24,21 +26,21 @@
 
 
 
-<tr>
+<tr class="table-primary">
     <td> Booking Date</td>
     <td>{{$booking->bookingdate}}</td>
 </tr>
 
 
-<tr>
+<tr class="table-primary">
     <td> Appointment Date</td>
     <td>{{$booking->appointmentdate}}</td>
 </tr>
-<tr>
+<tr class="table-primary">
     <td>Time</td>
     <td>{{$booking->time}}</td>
 </tr>
-<tr>
+<tr class="table-primary">
     <td>Update Customer Status</td>
     <td><select class="form-select" aria-label="Default select example" name="status">
           <option selected value="pending">pending</option>

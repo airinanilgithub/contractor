@@ -56,6 +56,7 @@ body{
     cursor: pointer;
 }
 </style>
+
 <br>
 <br>
 
@@ -82,14 +83,22 @@ body{
                         <br>
                         <div class="form-group">
                         <button class="btnContact">Send Message</button>
-                            
+                            <br>
+                            <br>
                         </div>
+                        @if(Session::get('success'))
+            <div class="alert alert-success mt-4" style="font-size: 20px;color:black;font-family: poppins;">
+            {{Session::get('success')}}
+            </div>
+            @endif
                     </div>
+                    
                     <div class="col-md-6">
                         
                     </div>
                 </div>
             </form>
+            
 </div>
 </section>
             @endsection

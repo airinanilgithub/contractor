@@ -1,6 +1,14 @@
 @extends("admintheme")
 @section("content")
-<table class="table ">
+<br>
+<br>
+
+<div class="container" >
+
+<div class="row">
+
+
+<table class="table table table-dark ">
 <tr>
     
     <th>PROJECT ID</th>
@@ -47,4 +55,7 @@
 
 </table>
 
+</div>
+</div>
+</section>
 @endsection

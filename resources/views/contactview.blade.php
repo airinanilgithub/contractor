@@ -1,6 +1,10 @@
 @extends("admintheme")
 @section("content")
-<table class="table ">
+<br>
+<br>
+<div class="container">
+<div class="row">
+<table class="table table-borderless  table-dark">
 <tr>
     <th>User name</th> 
     <th>Message</th>
@@ -8,7 +12,7 @@
    
 </tr>
 @foreach($contacts as $contact)
-<tr>
+<tr class=" table-primary">
     <td>{{$contact->user}}</td>
     <td>{{ $contact->Message }}</td>
     <td>{{$contact->date}}</td>
@@ -17,5 +21,6 @@
 @endforeach
 
 </table>
-
+</div>
+</div>
 @endsection
