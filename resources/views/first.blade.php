@@ -155,11 +155,10 @@ text-align:center;
 <div class="text-area">
 <span>BRICK</span>
 
-<span>.</span>
+<br>
 
 <span>BY</span>
-
-<span>.</span>
+<br>
 <span>BRICK</span>
 
 
