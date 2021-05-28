@@ -31,7 +31,7 @@
 	letter-spacing: 4px;
 	padding-top: 30px;
 	font-size: 40px;
-	margin: 0;
+	margin:0;
 }
 .content-area p {
 	padding: 2% 0px;
@@ -44,24 +44,31 @@
 	margin: 0 auto;
 }
 </style>
-<div class="container">
-<div class="row">
+
 <div class="banner-area">
 			<h2>ABOUT US</h2>
-		</div>
+	
+   </div>
 		<div class="content-area">
 			<div class="wrapper">
 				
 				<p>
+        <div class="container">
+      
+     
+        <div class="row">
+        <div class=" col col-4 col-sm-12 col-md-12  col-lg-12 ">
         <section  style="background-color:black">
 
-<div class="col-md-12 col-sm-12 col-xs-12 text-center">
+
               <h2 class="violet-head" style="color:white" >Not just a home to stay in, but an asset for generations.</h2>
-            </div>
+          
             <br>
             <br>
             
 <section>
+
+
 <div class="accordion accordion-flush accordion" id="accordionFlushExample" ">
   <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingOne">
@@ -127,19 +134,13 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
 </section>
+</section>
+</div>
+</div>
+</div>
 </p>
 </div>
 </div>
-			</div>
-		</div>
 @endsection
 

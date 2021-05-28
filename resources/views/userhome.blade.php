@@ -1,5 +1,6 @@
 @extends("usertheme")
 @section("content")
+
 <style>
 * {
 	margin: 0;
@@ -34,7 +35,7 @@ body {
 	font-size: 65px;
 	margin-top: 20%;
 }
-.banner-text h2 {
+.banner-tx h2 {
 	text-align: center;
 	color: #fff;
 	font-size: 30px;
@@ -117,20 +118,23 @@ body {
 <br>
 
 
-
 <section>
-	<div class="banner-text">
+<div class="banner-text">
+	<div class="container">
+	<div class="row">
+	<br>
+	<br>
+	<br>
 	<h5>BRICK BY BRICK CONSTRUCTIONS </h5>
-		
-	</div>
-	<br>
-	<br>
-	<br>
 
-	<br>
-	<div class="banner-text">
 	
-		<h2>-Build your happiness brick by brick- </h2>
+	<h2>-Build your happiness brick by brick- </h2>
+
+	
+	</div>
+
+	
+	</div>
 	</div>
 	<div class="animation-area">
 		<ul class="box-areaa">
