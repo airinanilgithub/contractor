@@ -82,7 +82,7 @@ text-align:center;
         </style>
         <style>
             .text-area{
-                font-size:55px;
+                font-size:35px;
                 font-family:roboto;
                 text-transform:uppercase;
                 font-weight:bold;
@@ -148,25 +148,20 @@ text-align:center;
 <header > 
 <div class="container">
 <div class="row">
-<div class="col col-12 col-sm-4 col-md-4 col-lg-4">
+<div class="col col-12 col-sm-8 col-md-8 col-lg-8">
+<div class="col"></div>
 <div class="banner-text">
 
 <div class="text-area">
-<span>B</span>
-<span>R</span>
-<span>I</span>
-<span>C</span>
-<span>K</span>
+<span>BRICK</span>
+
 <span>.</span>
 
-<span>B</span>
-<span>Y</span>
+<span>BY</span>
+
 <span>.</span>
-<span>B</span>
-<span>R</span>
-<span>I</span>
-<span>C</span>
-<span>K</span>
+<span>BRICK</span>
+
 
 </div>
 
@@ -181,12 +176,11 @@ text-align:center;
 </p>
 
 </header>
-
+<div class="col"></div>
 
 </div>
 </div>
 </div>
-
 </div>
 </div>
 
