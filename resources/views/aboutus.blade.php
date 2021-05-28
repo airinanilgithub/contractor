@@ -3,12 +3,12 @@
 @section("content")
 <style>
 .banner-area {
-	width: 100%;
-	height: 500px;
+	width: 100vw;
+	height: 500px auto;
 	position: fixed;
 	top: 100px;
 	background-image: url(https://i.postimg.cc/T3B3WFcv/2.jpg);
-	-webkit-background-size: cover;
+	-webkit-background-size: auto;
 	background-size: cover;
 	background-position: center center;
 }
@@ -30,8 +30,9 @@
 	font-family: poppins;
 	letter-spacing: 4px;
 	padding-top: 30px;
+
 	font-size: 40px;
-	margin:0;
+	margin: 0;
 }
 .content-area p {
 	padding: 2% 0px;
@@ -40,15 +41,13 @@
 }
 
 .wrapper {
-	width: 1170px;
+	width: auto;
 	margin: 0 auto;
 }
 </style>
-
-<div class="banner-area">
+<div class="banner-area" >
 			<h2>ABOUT US</h2>
-	
-   </div>
+		</div>
 		<div class="content-area">
 			<div class="wrapper">
 				
@@ -57,7 +56,7 @@
       
      
         <div class="row">
-        <div class=" col col-4 col-sm-12 col-md-12  col-lg-12 ">
+        <div class=" col-12 ">
         <section  style="background-color:black">
 
 

@@ -10,7 +10,7 @@ body {
 	font-family: 'Baloo 2', cursive;
 }
 .banner-text {
-	width: 100%;
+	width: 100vw;
 	position: absolute;
 	z-index: 1;
 }
@@ -32,7 +32,7 @@ body {
 	font-family: poppins;
 	text-align: center;
 	color: #fff;
-	font-size: 65px;
+	font-size: 42px ;
 	margin-top: 20%;
 }
 .banner-tx h2 {
@@ -43,7 +43,7 @@ body {
 }
 .animation-area {
 	background: linear-gradient(to left, #8942a8, #ba382f);
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 }
 .box-areaa {
