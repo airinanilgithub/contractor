@@ -156,7 +156,7 @@ input[type=checkbox] {
 			<p>Password</p><input type="password" name="adpassword" placeholder="Enter the password**" style="background-color:#fff;color:black;" class="form-control"><button class="btn btn-success" type="submit">Login</button>
 <br>
         <br>
-        <a href="/register">Create an Account</a><br><a href="/index">User Login</a>
+       <br><a href="/index">User Login</a>
 	
         </center>
    

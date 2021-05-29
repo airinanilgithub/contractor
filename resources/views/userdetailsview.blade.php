@@ -112,6 +112,17 @@ button .fa{
 .details .rating{
     margin: 10px 0;
 }
+.imgsec{
+    width: 600px;
+    height: 400px;
+}
+
+@media screen and (max-width: 600px) {
+    .imgsec{
+    width: 300px;
+    height: 100px;
+}
+}
 </style>
 
 
@@ -122,7 +133,7 @@ button .fa{
 
 
 
-
+<section style="background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80); height:3000px; 	background-size: cover;">
 
 <div class="container">
 <div class="row">
@@ -240,30 +251,30 @@ button .fa{
 
 
         <div class="related">
-            <h2 style="color:black">Details</h2>
+            <h2 style="color:white">Details</h2>
             <div class="row">
                
                    
                         
-                            <p>{{$projects->pdetails}}</p>     
+                            <p style="color:white">{{$projects->pdetails}}</p>     
         </div>
     </div>
 
     <div class="related">
-            <h2 style="color:black">Features</h2>
+            <h2 style="color:white">Features</h2>
             <div class="row">
-                            <p>{{$projects->pdetailsnew}}</p>
+                            <p style="color:white">{{$projects->pdetailsnew}}</p>
  
         </div>
         </div>
         <div class="related">
             <h2 style="color:black">Floor Plans</h2>
             <div class="row">
-            <div class="col col lg-12 col">
+            <div class="col col-12 col-lg-12">
                
                    
            
-            <img width="600" height="400" src="{{ URL ::asset('assets/project_img2/'.$projects->pimage2) }}">
+            <img class="imgsec" width="600" height="400" src="{{ URL ::asset('assets/project_img2/'.$projects->pimage2) }}">
                            
 
                       
@@ -271,7 +282,10 @@ button .fa{
          
         </div>
 
-
+        <br>
+    <br>
+    <br>
+    <br>
 
     </div>
     </div>
@@ -279,6 +293,6 @@ button .fa{
     <br>
     <br>
     <br>
-
+</section>
           
             @endsection

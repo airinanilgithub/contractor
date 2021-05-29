@@ -16,7 +16,7 @@ body{
 }
 
 .card{
-     width: 20%;
+     width: 20% ;
      display: inline-block;
      box-shadow: 2px 2px 20px black;
      border-radius: 5px; 
@@ -66,10 +66,18 @@ button:hover{
   cursor: pointer;
 }
 
+@media screen and (max-width: 600px) {
+  .card{
+     width: 60% ;
+  }
+}
+
 </style>
 <style>
 
 </style>
+
+
 <body>
 <br>
 
@@ -78,7 +86,7 @@ button:hover{
 <br>
 <br>
 <br>
-<section style="background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80); height:2000px; 	background-size: cover;">
+<section style="background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80); height:1000px; 	background-size: cover;">
 <div class="container">
 <div class="row">
 
@@ -99,16 +107,16 @@ button:hover{
       </div>
 
 
-
-
-<div class="main">
+      <!-- <div class="col col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="container">
+<div class="main"> -->
 
  <!--cards -->
  @foreach($projects as $project)
 <div class="card">
 
 <div class="image">
-<img height="300px" src="{{ URL ::asset('assets/project_img/'.$project->pimage) }}">
+<img height="250px" src="{{ URL ::asset('assets/project_img/'.$project->pimage) }}">
 </div>
 <div class="title">
  <h1>
@@ -121,10 +129,14 @@ button:hover{
 </button>
 </div>
 </div>
+
 @endforeach
 </div>
 <section>
-<br>
-<br>
+<!-- </div>
 </div>
+
+<br>
+<br>
+</div> -->
 @endsection
