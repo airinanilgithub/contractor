@@ -152,8 +152,8 @@ input[type=checkbox] {
 		<img alt="" class="avatar" src="https://i.postimg.cc/zDyt7KCv/a1.jpg">
 		<h2>USER LOGIN</h2>
 	
-			<p>Username</p><input type="text" name="rusername" placeholder="username"class="form-control">
-			<p>Password</p><input type="password" name="rpassword" placeholder="password" class="form-control"><button class="btn btn-success" type="submit">Login</button>
+			<p>Username</p><input type="text" name="rusername" placeholder="Enter the username**"class="form-control">
+			<p>Password</p><input type="password" name="rpassword" placeholder="Enter the password**" class="form-control" style="background-color:#fff;color:black;"><button class="btn btn-success" type="submit">Login</button>
 <br>
         <br>
         <a href="/register">Create an Account</a><br><a href="/adminlogin">Admin Login</a>

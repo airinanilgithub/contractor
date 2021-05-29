@@ -4,7 +4,7 @@
 <br>
 <div class="container">
 <div class="row">
-<table class="table table-borderless  table-dark ">
+<table class="table table-borderless  table-dark "style="display: block;overflow-x: auto;white-space: nowrap;">
 <tr>
     <th>User name</th>
 

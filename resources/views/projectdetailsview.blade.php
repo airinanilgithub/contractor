@@ -8,7 +8,7 @@
 <div class="row">
 
 
-<table class="table table table-dark ">
+<table class="table table table-dark " style="display: block;overflow-x: auto;white-space: nowrap;">
 <tr>
     
     <th>PROJECT ID</th>

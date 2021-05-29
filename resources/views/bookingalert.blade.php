@@ -1,6 +1,6 @@
 @extends("usertheme")
 @section("content")
-
+<section style="background-image:url(https://images.pexels.com/photos/1037993/pexels-photo-1037993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); height:1200px;background-size:cover;">
 @if(Session::get('success'))
             <div class="alert alert-success">
             {{Session::get('success')}}
@@ -32,5 +32,6 @@
   </p>
 </div>
 @endforeach
+</section>
 
 @endsection

@@ -160,6 +160,8 @@
 						<div class="form-header">
 							<h5>Book an Appointment</h5>
 						</div>
+					
+					
                         <form action="/bookings" method="post">
 {{csrf_field()}}
 							<div class="row">

@@ -25,6 +25,8 @@
 	top: 450px;
 	background: #ebebeb;
 	height: 1500px;
+background-color:black;
+
 }
 .content-area h2 {
 	font-family: poppins;
@@ -48,7 +50,7 @@
 <div class="banner-area" >
 			<h2>ABOUT US</h2>
 		</div>
-		<div class="content-area">
+		<div class="content-area" >
 			<div class="wrapper">
 				
 				<p>
@@ -65,7 +67,7 @@
             <br>
             <br>
             
-<section>
+<section >
 
 
 <div class="accordion accordion-flush accordion" id="accordionFlushExample" ">
