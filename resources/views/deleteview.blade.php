@@ -58,7 +58,7 @@
     <td>
   
                             <textarea  name="pdetails" class="form-control" value="{{$projects->pdetails}}"  style="width: 100%; height: 150px;"></textarea>
-                        </div>
+                        </td>
 
 </tr>
 <br>

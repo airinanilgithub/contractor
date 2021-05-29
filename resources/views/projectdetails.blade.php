@@ -62,7 +62,7 @@
     <td>
   
                             <textarea  name="pdetails" class="form-control"   style="width: 100%; height: 150px;"></textarea>
-                        </div>
+                        </td>
 
 </tr>
 <br>
