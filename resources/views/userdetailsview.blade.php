@@ -115,6 +115,8 @@ button .fa{
 .imgsec{
     width: 600px;
     height: 400px;
+  position:absolute;
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -268,13 +270,13 @@ button .fa{
         </div>
         </div>
         <div class="related">
-            <h2 style="color:black">Floor Plans</h2>
+            <h2 style="color:blue">Floor Plans</h2>
             <div class="row">
             <div class="col col-12 col-lg-12">
                
                    
            
-            <img class="imgsec" width="600" height="400" src="{{ URL ::asset('assets/project_img2/'.$projects->pimage2) }}">
+         <img class="imgsec" width="600" height="400" src="{{ URL ::asset('assets/project_img2/'.$projects->pimage2) }}">
                            
 
                       
