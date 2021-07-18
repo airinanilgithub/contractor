@@ -9,6 +9,7 @@
 }
 body{
  font-family: arial;
+ height:100%;
 }
 .main{
 
@@ -86,7 +87,7 @@ button:hover{
 <br>
 <br>
 <br>
-<section style="background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80); height:1000vh; 	background-size: cover;">
+<section  style="background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80); height:100%; 	background-size: cover;">
 <div class="container">
 <div class="row">
 

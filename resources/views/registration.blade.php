@@ -74,12 +74,18 @@ background-position:center center;
         
         <br>
         <form action="/registerread" method="post">
+       
 {{csrf_field()}}<table class="table table-borderless">
 <tr>
 
-
 <tr>
- 
+@if(Session::get('fail'))
+               <div class="alert alert-danger">
+                  {{ Session::get('fail') }}
+               </div>
+    @endif
+    
+
     <input type="text" name="rname" value="{{old('rname')}}" class="form-control" placeholder="Your Name...">
     <span class="text-danger">@error('rname'){{$message}} @enderror  </span>
 

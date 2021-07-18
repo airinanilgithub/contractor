@@ -83,8 +83,17 @@ class registercontroller extends Controller
      $register->rusername=$getusername;
      $register->rpassword=Hash::make($request->rpassword);
 
-     $register->save();
-return redirect('/index');
+     
+     $save=$register->save();
+                if($save)
+                {
+                    return redirect('/index')->with('success',"Registered successfully");
+                }
+                else
+                {
+                    return back()->with('fail',"Not Registered");
+                }
+
      
 
     }

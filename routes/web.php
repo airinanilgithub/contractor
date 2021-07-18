@@ -63,14 +63,14 @@ Route::get('/sample', function () {
     
     
 });
-    
+Route::get('/aboutus',[registercontroller::class,'aboutus']);
 Route::post('/ulogs',[registercontroller::class,'check']);
 
 
 Route::group(['middleware'=>['Usercheck']],function()
 {
     Route::get('/userhome',[registercontroller::class,'usernew']);
-    Route::get('/aboutus',[registercontroller::class,'aboutus']);
+   
     Route::get('/contact',[registercontroller::class,'contact']);
     Route::post('/cussearch',[projectcontroller::class,'search']);
     Route::get('/myorders',[bookingcontroller::class,'myorder']);

@@ -25,6 +25,7 @@ class bookingcontroller extends Controller
     public function myorder()
     {
        // $products=pmodel::all();
+       
        $userId=Session::get('loggeduser');
         $bookings= DB::table('bookingmodels')
         
@@ -32,6 +33,7 @@ class bookingcontroller extends Controller
         ->get();
          return view('bookingalert', ['bookings'=>$bookings]);
     }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -39,8 +41,11 @@ class bookingcontroller extends Controller
      */
     public function create()
     {
-        $booking=bookingmodel::all();
-        return view('booking',compact('booking'));
+        $userId=Session::get('loggeduser');
+        $booking=bookingmodel::where('bookingmodels.user_id', $userId)
+        ->first();
+        //return view('booking',compact('booking'));
+        return view('booking')->with('booking',$booking);
     }
 
     /**
@@ -52,6 +57,7 @@ class bookingcontroller extends Controller
 public function invoice()
 {
     $userId=Session::get('loggeduser');
+
     $bookings= DB::table('bookingmodels')
     
     ->where('bookingmodels.user_id', $userId)
@@ -116,16 +122,23 @@ public function invoice()
           
             $booking->time=$gettime;
             $booking->status="pending";
-            $booking->save();
-         return redirect('/myorders');
+         
+        $save=$booking->save();
+        if($save)
+        {
+            return redirect('/booking')->with('success',"Booked successfully");
         }
         else
         {
-          echo "fail";
+            return back()->with('fail',"Not Booked");
         }
+
+
+
+
         
     }
-        
+}
   
 
 
@@ -142,10 +155,7 @@ public function invoice()
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        //
-    }
+    
 
     /**
      * Show the form for editing the specified resource.
@@ -153,10 +163,7 @@ public function invoice()
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
-        //
-    }
+    
 
     /**
      * Update the specified resource in storage.
@@ -165,10 +172,7 @@ public function invoice()
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
-        //
-    }
+    
 
     /**
      * Remove the specified resource from storage.
@@ -176,8 +180,5 @@ public function invoice()
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
-        //
-    }
+    
 }

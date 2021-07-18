@@ -1,5 +1,10 @@
 @extends("usertheme")
 @section("content")
+@if(Session::get('success'))
+            <div class="alert alert-success">
+            {{Session::get('success')}}
+            </div>
+     @endif
 <style>
 
 .section {
@@ -151,7 +156,52 @@
 
 
 
+
+<!-- <script>
+function myFunction() {
+  var x = document.getElementById("myDate").min;
+  document.getElementById("demo").innerHTML = x;
+}
+</script> -->
+
+
+<script>var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
+</script>
+
+
 <body>
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+	  <p><b>**Note:Kindly carry the invoice at the time of Appointment.</b></p>
+	  
+        
+	
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+	  Booking Status:
+	  <h5 class="modal-title" id="exampleModalLabel">{{$booking->status}}</h5>
+		
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		<a class="btn btn-warning"  href="/download/{{$booking->id}}" role="Button" >View Invoice</a>
+
+      </div>
+    </div>
+  </div>
+</div>
 	<div id="booking" class="section">
 		<div class="section-center">
 			<div class="container">
@@ -161,9 +211,12 @@
 							<h5>Book an Appointment</h5>
 						</div>
 					
-					
+		
                         <form action="/bookings" method="post">
 {{csrf_field()}}
+
+
+
 							<div class="row">
 								
 							</div>
@@ -174,7 +227,9 @@
 								<div class="col-sm-5">
 									<div class="form-group">
 										<span class="form-label"> Date</span>
-										<input class="form-control" name="appointmentdate"type="date" required>
+										<p id="demo"></p>
+										
+										<input class="form-control" id="appointmentdate"  name="appointmentdate"type="date" min="2021-07-19" max="2021-08-30" required>
 										<span class="text-danger">@error('appointmentdate'){{$message}} @enderror  </span>
 									</div>
 								</div>
@@ -215,14 +270,29 @@
 								</div>
 							</div>
 							<div class="form-btn">
-                            <button class="submit-btn">Book Now</button>
+                            <button class="submit-btn" onclick="myFunction()">Book Now</button>
+						
+						
+						
 							</div>
+							
 						</form>
 					</div>
+					
 				</div>
 			</div>
+<br>
+<br>
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  View Status
+</button>
 		</div>
 	</div>
+
+
+
+
+
 </body>
 
 

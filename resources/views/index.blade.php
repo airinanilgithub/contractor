@@ -110,22 +110,26 @@ input[type=checkbox] {
 </style> <div class="container">
 <div class="row">
 
-<div class="col">
 
+<div class="col col-12 col-sm-4 col-md-4 col-lg-4">
+@if(Session::get('success'))
+               <div class="alert alert-success">
+                  {{ Session::get('success') }}
+               </div>
+    @endif
+	</div>
+	<div class="row">
 
+<br>
 </div>
-
+	<div>
+<br>
+	</div>
+	<br>
+<br>
+<br>
+<br>
 <div class="col col-12 col-sm-4 col-md-4 col-lg-4" style="background-image: url('https://image.freepik.com/free-photo/design-space-paper-textured-background_53876-32191.jpg'); background-size :100%;">
-<br>
-<br>
-<br>
-<br>
-<br>
-<center><<h1> <p class="text-white ">SIGN UP!</p><h1></center>
-</div>
-<div class="col col-12 col-sm-6 col-md-4 col-lg-4" style="background-image:url('')">
-<form action="/ulogs" method="post">
-{{ csrf_field() }}
 @if(count($errors)>0)
             <div class="alert alert-danger">
             <ul>
@@ -140,6 +144,18 @@ input[type=checkbox] {
             {{Session::get('fail')}}
             </div>
             @endif
+<br>
+<center><<h1> <p class="text-white ">SIGN UP!</p><h1></center>
+</div>
+<div class="col col-12 col-sm-6 col-md-4 col-lg-4" style="background-image:url('')">
+<form action="/ulogs" method="post">
+{{ csrf_field() }}
+
+	
+		<br>
+		<br>
+		<br>
+		<br>
 
 <table class="table table-borderless">
 <tr>

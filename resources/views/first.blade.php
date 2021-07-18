@@ -49,6 +49,7 @@ background-position:center center;
 position:absolute;
 top:50%;
 left: 50%;
+margin: left 10px;px;
 transform:translate(-50%,-50%);
 text-align:center;
 }
@@ -167,11 +168,16 @@ text-align:center;
 <p>
   
 </p>
-<h5  style="color:white">-Build your happiness Brick by Brick-</h5>
+<h5  style="color:blue">-Build your happiness Brick by Brick-</h5>
+<h5  > <p>“Brick by Brick" helps you to build your happiness project brick by brick.At Brick by Brick, we have always taken care to pick the best location with ease of accessibility and assured appreciation. The perfect locations make our project truly well connected. All our projects are located at the heart of the city which gives residents access to the most happening lifestyle hubs, the finest hotels, luxury retail stores, premium entertainment centres and major hotspots of work.
+
+</h5>
+                </p>
 <p class="banner-btn">
 
-<a href="/index" class="active">USER</a>
-<a href="/adminlogin" > ADMIN</a>
+<a href="/index" class="active">LOGIN</a>
+<a href="/aboutus" >ABOUT US</a>
+
 </p>
 
 </header>
